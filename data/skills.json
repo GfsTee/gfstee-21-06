@@ -1,0 +1,20 @@
+[
+    {
+        "skillName": "HTML",
+        "skillIcon": "",
+        "skillColor": "#a00",
+        "skill": 90
+    },
+    {
+        "skillName": "CSS",
+        "skillIcon": "",
+        "skillColor": "#0a0",
+        "skill": 80
+    },
+    {
+        "skillName": "JS",
+        "skillIcon": "",
+        "skillColor": "#00a",
+        "skill": 60
+    }
+]
