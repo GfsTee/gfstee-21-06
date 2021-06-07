@@ -1,25 +1,7 @@
 import Link from 'next/link'
 import { useState, useEffect, useRef } from "react";
-// Usage
-function App() {
-    // Create a ref that we add to the element for which we want to detect outside clicks
-    const ref = useRef();
-    // State for our modal
-    const [isModalOpen, setModalOpen] = useState(false);
-    // Call hook passing in the ref and a function to call on outside click
-    return (
-        <div>
-            {isModalOpen ? (
-                <div >
-                    👋 Hey, I'm a modal. Click anywhere outside of me to close.
-                </div>
-            ) : (
-                <button onClick={() => setModalOpen(true)}>Open Modal</button>
-            )}
-        </div>
-    );
-}
-// Hook
+
+
 function useOnClickOutside(ref, handler) {
     useEffect(
         () => {
@@ -48,9 +30,6 @@ function useOnClickOutside(ref, handler) {
 }
 
 
-
-
-
 const Nav = () => {
     // Create a ref that we add to the element for which we want to detect outside clicks
     const ref = useRef();
@@ -69,9 +48,9 @@ const Nav = () => {
 
                 <nav>
                     <ul>
-                        <li><Link href=""><a>Home</a></Link></li>
-                        <li><Link href=""><a>About</a></Link></li>
-                        <li><Link href=""><a>Contact</a></Link></li>
+                        <li><Link href="#"><a>About me</a></Link></li>
+                        <li><Link href="#skills"><a>My skills</a></Link></li>
+                        <li><Link href="#projects"><a>My Projects</a></Link></li>
                     </ul>
                 </nav>
             </div>
@@ -93,9 +72,12 @@ const Nav = () => {
                 a {
                     transform: skew(5deg);
                     display: block;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
                 }
                 .nav-wrapper {
-                    position: relative;
+                    background: #fff;
+                    position: fixed;
                     top: 0;
                     bottom: 0;
                     left: -275px;
