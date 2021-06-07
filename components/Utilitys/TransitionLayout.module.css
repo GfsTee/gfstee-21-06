@@ -1,10 +1,10 @@
 .content {
     opacity: 0;
-    background-color: cornflowerblue;
-    transition: 1s;
+    transition: opacity 1s;
   }
   
   .fadeIn {
     opacity: 1;
   }
+
   
