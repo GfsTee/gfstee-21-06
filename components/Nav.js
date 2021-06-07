@@ -48,9 +48,9 @@ const Nav = () => {
 
                 <nav>
                     <ul>
-                        <li><Link href="#"><a>About me</a></Link></li>
-                        <li><Link href="#skills"><a>My skills</a></Link></li>
-                        <li><Link href="#projects"><a>My Projects</a></Link></li>
+                        <li><Link href="/"><a onClick={() => setModalOpen(false)}>About me</a></Link></li>
+                        <li><Link href="/skills"><a onClick={() => setModalOpen(false)}>My skills</a></Link></li>
+                        <li><Link href="/projects"><a onClick={() => setModalOpen(false)}>My Projects</a></Link></li>
                     </ul>
                 </nav>
             </div>
